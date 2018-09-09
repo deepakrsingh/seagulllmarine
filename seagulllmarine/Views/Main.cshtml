@@ -1,0 +1,427 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Seagulll Marine Academy" />
+    <meta name="keywords" content="marine, marine academy, marine courses" />
+    <meta name="author" content="Seagulll Marine Academy" />
+
+    <!-- Favicon and Touch Icons -->
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/png">
+
+    <title>Seagulll Marine Academy</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>*@
+
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="header-top bg-theme-color-2 sm-text-center p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="widget no-border m-0">
+
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+
+                            <div class="widget no-border m-0 mr-15 pull-right flip sm-pull-none sm-text-center">
+                                <ul class="styled-icons icon-circled icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15">
+                                    <li><a href="#"><i class="fa text-white"></i></a></li>
+                                    <!--<li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle p-0 bg-lightest xs-text-center">
+                <div class="container pt-0 pb-0">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-5">
+                            <div class="widget no-border m-0">
+                                <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="/">
+                                    <img src="/images/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-phone-square text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                                    <li>
+                                        <a href="#" class="font-12 text-gray text-uppercase">Call us today!</a>
+                                        <h5 class="font-14 m-0"> 022-69900123</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-clock-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                                    <li>
+                                        <a href="#" class="font-12 text-gray text-uppercase">We are open!</a>
+                                        <h5 class="font-13 text-black m-0"> Mon-Sat 9:00-17:00</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <div class="widget no-border pull-left sm-pull-left sm-text-center mt-5 mb-5 m-0">
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="certificate/certificate.pdf" target="_blank"><img src="/images/certificate.jpg"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-1">
+                            <div class="widget no-border pull-left sm-pull-left sm-text-center mt-5 mb-5 m-0">
+                                <ul class="list-inline">
+                                    <li>
+                                        <h5 href="#" class="font-12 text-black text-uppercase">INDOS NO: Awaiting...</h5>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav-wrapper navbar-scrolltofixed bg-theme-colored border-bottom-theme-color-2-1px">
+                    <div class="container">
+                        <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive">
+                            <ul class="menuzord-menu">
+                                <li class="@(ViewBag.Current == "Home" ? "active" : "")">
+                                    @Html.ActionLink("Home", "Index", "Home")
+
+                                </li>
+
+                                <li class="@(ViewBag.Current == "About" ? "active" : "")">
+                                    @Html.ActionLink("About Us", "About", "Home")
+                                </li>
+
+                                <li class="@(ViewBag.Current == "Courses" ? "active" : "")">
+                                    <a href="javascript:void();">Courses</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="#home">Basic Modular Courses</a>
+                                            <ul class="dropdown">
+                                                <li>@Html.ActionLink("AUGFF", "Courses", "Courses", new { Id = 1 }, null)</li>
+                                                <li>
+                                                    @Html.ActionLink("Elementary First Aid", "Courses", "Courses", new { Id = 2 }, null)
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Fire Prevention And Fire Fighting", "Courses", "Courses", new { Id = 3 }, null)
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("OTCTO", "Courses", "Courses", new { Id = 4 }, null)
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Passenger Ship Familiarization", "Courses", "Courses", new { Id = 5 }, null)
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Personal Safety & Social Responsibility", "Courses", "Courses", new { Id = 6 }, null)
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("RFPFF", "Courses", "Courses", new { Id = 7 }, null)
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("RPST", "Courses", "Courses", new { Id = 8 }, null)
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("STSDSD", "Courses", "Courses", new { Id = 9 }, null)
+
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="#home">Advanced Modular Courses</a>
+                                            <ul class="dropdown">
+                                                <li>
+                                                    @Html.ActionLink("Advanced Fire Fighting", "Courses", "Courses", new { Id = 10 }, null)
+                                                </li>
+                                                <li>
+
+                                                    @Html.ActionLink("Chemco", "Courses", "Courses", new { Id = 11 }, null)
+                                                </li>
+                                                <li>
+
+                                                    @Html.ActionLink("Medical First Aid", "Courses", "Courses", new { Id = 12 }, null)
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Refresher Medical First Aid", "Courses", "Courses", new { Id = 13 }, null)
+                                                </li>
+                                                <li>
+                                                    <a href="courses/NewRAFF.html">Reff.-Advanced Fire Fighting </a>
+                                                    @Html.ActionLink("Refresher Advanced Fire Fighting", "Courses", "Courses", new { Id = 14 }, null)
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("TASCO", "Courses", "Courses", new { Id = 15 }, null)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+
+                                            <a href="#home">Compentency Courses</a>
+                                            <ul class="dropdown">
+                                                <li>
+
+                                                    @Html.ActionLink("Second Mate (FG)", "Courses", "Courses", new { Id = 16 }, null)
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Near Coastal Voyage", "Courses", "Courses", new { Id = 17 }, null)
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <a href="#home">Value Added Courses</a>
+                                            <ul class="dropdown">
+                                                <li>
+                                                    @Html.ActionLink("Enclosed-Entry Duration", "Courses", "Courses", new { Id = 18 }, null)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="@(ViewBag.Current == "Faculty" ? "active" : "")">
+                                    @Html.ActionLink("Faculty", "Index", "Faculty")
+                                    <ul class="dropdown">
+                                        <li>@Html.ActionLink("Principal", "Principal", "Faculty")</li>
+                                        <li>@Html.ActionLink("Full Time Faculty", "FullTimeFaculty", "Faculty")</li>
+                                        <li>@Html.ActionLink("Visiting Faculty", "VisitingFaculty", "Faculty")</li>
+                                    </ul>
+                                </li>
+                                <li class="@(ViewBag.Current == "Gallery" ? "active" : "")">
+                                    @Html.ActionLink("Gallery", "Gallery", "Home")
+                                </li>
+                                <li class="@(ViewBag.Current == "News" ? "active" : "")">
+                                    @Html.ActionLink("News", "News", "Home")
+
+                                </li>
+                                <li class="@(ViewBag.Current == "Contact" ? "active" : "")">
+                                    @Html.ActionLink("Contact Us", "Contact", "Home")
+
+                                </li>
+                            </ul>
+                            <ul class="pull-right flip hidden-sm hidden-xs">
+                                <li>
+                                    <!-- Modal: Book Now Starts -->
+                                    <a class="btn btn-colored btn-flat bg-theme-color-2 text-white font-14 bs-modal-ajax-load mt-0 p-25 pr-15 pl-15" data-toggle="modal" data-target="#BSParentModal" href="ajax-load/reservation-form.html">Enquiry</a>
+                                    <!-- Modal: Book Now End -->
+                                </li>
+                            </ul>
+                            <div id="top-search-bar" class="collapse">
+                                <div class="container">
+                                    <form role="search" action="#" class="search_form_top" method="get">
+                                        <input type="text" placeholder="Type text and press Enter..." name="s" class="form-control" autocomplete="off">
+                                        <span class="search-close"><i class="fa fa-search"></i></span>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            @RenderBody()
+        </div>
+
+        <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="images/bg2.jpg">
+            <div class="container">
+                <div class="row border-bottom">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="widget dark">
+                            <img class="mt-5 mb-20" alt="" src="images/logo-white-footer.png">
+                            <p>B-205, Nerul Station Commercial Complex, Nerul East, Sector 21, Nerul, Navi Mumbai, Maharashtra 400706. India</p>
+                            <ul class="list-inline mt-5">
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 "></i> <a class="text-gray" href="#">022-69900123</a> </li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 "></i> <a class="text-gray" href="#">support@seagulllmarineacademy.com</a> </li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 "></i> <a class="text-gray" href="#">www.seagulllmarineacademy.com</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="widget dark">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <ul class="list angle-double-right list-border">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="pricipal.html">Faculty</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="widget dark">
+                            <h4 class="widget-title">Twitter Feed</h4>
+                            <div class="twitter-feed list-border clearfix" data-username="Envato" data-count="2"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="widget dark">
+                            <h4 class="widget-title line-bottom-theme-colored-2">Opening Hours</h4>
+                            <div class="opening-hours">
+                                <ul class="list-border">
+                                    <li class="clearfix">
+                                        <span> Mon - Sat :  </span>
+                                        <div class="value pull-right"> 9.00 am - 17.00 pm </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span> Sun : </span>
+                                        <div class="value pull-right"> Closed </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-30">
+                    <div class="col-md-2">
+                        <div class="widget dark">
+                            <h5 class="widget-title mb-10">Call Us Now</h5>
+                            <div class="text-gray">
+                                022-69900123
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="widget dark">
+                            <h5 class="widget-title mb-10">Connect With Us</h5>
+                            <ul class="styled-icons icon-bordered icon-sm">
+                                <li><a href="https://www.facebook.com/SeagulllMarineAcademy" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/SeagulllMarine?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCX32bVjSRfIxWy72NKHncBw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/seagulllmarineacademy/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-2">
+                        <div class="widget dark">
+                            <h5 class="widget-title mb-10">Subscribe Us</h5>
+                            <!-- Mailchimp Subscription Form Starts Here -->
+                            <form id="mailchimp-subscription-form-footer" class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
+                                    <span class="input-group-btn">
+                                        <button data-height="45px" class="btn bg-theme-color-2 text-white btn-xs m-0 font-14" type="submit">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- Mailchimp Subscription Form Validation-->
+                            @*<script type="text/javascript">
+                                $('#mailchimp-subscription-form-footer').ajaxChimp({
+                                    callback: mailChimpCallBack,
+                                    url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+                                });
+
+                                function mailChimpCallBack(resp) {
+                                    // Hide any previous response text
+                                    var $mailchimpform = $('#mailchimp-subscription-form-footer'),
+                                        $response = '';
+                                    $mailchimpform.children(".alert").remove();
+                                    if (resp.result === 'success') {
+                                        $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                                    } else if (resp.result === 'error') {
+                                        $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                                    }
+                                    $mailchimpform.prepend($response);
+                                }
+                                </script>
+                                <!-- Mailchimp Subscription Form Ends Here -->
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112757725-1"></script>
+                                <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag() { dataLayer.push(arguments); }
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-112757725-1');
+                                </script>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom bg-black-333">
+                <div class="container pt-20 pb-20">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="font-11 text-black-777 m-0">Copyright &copy;2016 SEAGULLL MARINE ACADEMY. All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <div class="widget no-border m-0">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

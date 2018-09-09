@@ -1,0 +1,12 @@
+packages/
+seagulllmarine/App_Data/cache/
+seagulllmarine/App_Data/NuGetBackup/
+seagulllmarine/App_Data/TEMP/ClientDependency/
+seagulllmarine/App_Data/TEMP/ExamineIndexes/
+seagulllmarine/App_Data/TEMP/DistCache/
+seagulllmarine/App_Data/TEMP/PluginCache/
+seagulllmarine/bin/
+seagulllmarine/obj/
+seagulllmarine/Umbraco/
+seagulllmarine/Umbraco_Client/
+.vs/
