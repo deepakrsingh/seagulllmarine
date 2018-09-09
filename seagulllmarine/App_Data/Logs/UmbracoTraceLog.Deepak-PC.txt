@@ -3280,3 +3280,4 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2018-09-09 22:23:10,674 [P7644/D34/T131] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
  2018-09-09 22:23:10,782 [P7644/D34/T118] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
  2018-09-09 22:23:10,801 [P7644/D34/T124] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2018-09-09 22:28:38,435 [P7644/D34/T140] INFO  Umbraco.Web.Editors.AuthenticationController - User admin from IP address 127.0.0.1 has logged out
